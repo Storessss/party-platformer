@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=4 uid="uid://csfe1pfwqf48l"]
+
+[ext_resource type="PackedScene" uid="uid://pnibvom60dtd" path="res://scenes/game/tilemap.tscn" id="1_yautc"]
+[ext_resource type="PackedScene" uid="uid://dtmw4v2s3pvj1" path="res://scenes/players/shadow_shadeling.tscn" id="2_fr1um"]
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="Tilemap" parent="." instance=ExtResource("1_yautc")]
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAEAAAABAAAAAAAAAAEAAAACAAAAAAAAAAEAAAADAAAAAAAAAAEAAAAEAAAAAAAAAAEAAAAFAAAAAAAAAAEAAAAGAAAAAAAAAAEAAAAHAAAAAAAAAAEAAAAIAAAAAAAAAAEAAAAJAAAAAAAAAAEAAAAKAAAAAAAAAAEAAAALAAAAAAAAAAEAAAAMAAAAAAAAAAEAAAANAAAAAAAAAAEAAAAOAAAAAAAAAAEAAAAPAAAAAAAAAAEAAAAQAAAAAAAAAAEAAAARAAAAAAAAAAEAAAASAAAAAAAAAAEAAAATAAAAAAAAAAEAAAAUAAAAAAAAAAEAAAAVAAAAAAAAAAEAAAA=")
+
+[node name="ShadowShadeling" parent="." instance=ExtResource("2_fr1um")]
+position = Vector2(32, -17)
+
+[node name="Camera2D" type="Camera2D" parent="ShadowShadeling"]
+zoom = Vector2(3, 3)
